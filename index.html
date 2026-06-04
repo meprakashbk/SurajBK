@@ -575,8 +575,11 @@ section { padding: 6rem 4rem; }
 .gallery-slot img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
+  transition: transform 0.4s ease;
 }
+.gallery-slot:hover img { transform: scale(1.04); }
 .gallery-note {
   margin-top: 1.5rem;
   font-size: 0.8rem;
@@ -807,11 +810,8 @@ footer {
   <div class="about-grid fade-up">
     <div class="about-photo">
       <div class="about-photo-frame">
-                <!-- Replace with: <img src="suraj-portrait.jpg" style="width:100%;height:100%;object-fit:cover"> -->
-        <img src="suraj-portrait.jpg" style="width:100%;height:100%;object-fit:cover">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span style="font-size:0.65rem;color:rgba(255,255,255,0.15);letter-spacing:0.12em;text-transform:uppercase">Portrait Photo</span>
-      </div>
+          <img src="images/suraj-portrait.jpg" alt="Suraj Bishwakarma portrait" style="width:100%;height:100%;object-fit:cover;object-position:top center">
+        </div>
     </div>
     <div class="about-content">
       <p class="about-text">A highly accomplished Nepali football player and coach with over 16 years of professional experience. Known for his commanding presence as a center defender, Suraj has represented Nepal at the national level and competed across AFC competitions in multiple countries.</p>
@@ -1121,32 +1121,25 @@ footer {
   </div>
   <div class="gallery-grid fade-up">
     <div class="gallery-slot featured">
-      <!-- Replace: <img src="photo1.jpg" alt="Suraj in action"> -->
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Main Action Photo</span>
+      <img src="images/suraj-action1.jpg" alt="Suraj Bishwakarma in action">
     </div>
     <div class="gallery-slot">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Award Ceremony</span>
+      <img src="images/suraj-award.jpg" alt="Award ceremony">
     </div>
     <div class="gallery-slot">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Team Photo</span>
+      <img src="images/suraj-team.jpg" alt="Team photo">
     </div>
     <div class="gallery-slot">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>International Match</span>
+      <img src="images/suraj-international.jpg" alt="International match">
     </div>
     <div class="gallery-slot">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Coaching Session</span>
+      <img src="images/suraj-coaching.jpg" alt="Coaching session">
     </div>
     <div class="gallery-slot">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>Trophy Lift</span>
+      <img src="images/suraj-trophy.jpg" alt="Trophy lift">
     </div>
   </div>
-  <p class="gallery-note fade-up">Send photos in JPG or PNG format — replace placeholder slots above.</p>
+  <p class="gallery-note fade-up">Save your photos in the <strong>images/</strong> folder using the filenames above.</p>
 </section>
 
 <!-- CONTACT -->
