@@ -244,10 +244,13 @@ nav {
 }
 .hero-img-placeholder {
   width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #0a0a14 100%);
+  position: relative;
+}
+.hero-img-placeholder img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 .photo-slot {
   width: 200px; height: 200px;
@@ -788,13 +791,7 @@ footer {
       <div class="hero-line hero-line-1"></div>
       <div class="hero-line hero-line-2"></div>
       <div class="hero-img-placeholder" id="hero-photo-zone">
-
-        <div class="photo-slot">
-         <!-- HERO 
- <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          Add Hero Photo -->
-                 <img src="images/suraj-hero.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top">
-        </div>
+        <img src="1780602262983_image.png" alt="Suraj Bishwakarma — Football Player & Coach">
       </div>
       <div class="hero-diagonal"></div>
     </div>
